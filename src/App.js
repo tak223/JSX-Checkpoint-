@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import image from "./imageInSrc.png";
+import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="App2" style={{border:"solid 1px black",maxwidth:"100vw"}}>
+     <h1 className="title red">takwa </h1>
+      <img src={image}  alt="myimage"   />
+      <img src="/imageInPublic.png"  alt="myimage"/>
+      </div>
+  </div>
+            );
 }
 
-export default App;
+            export default App;
